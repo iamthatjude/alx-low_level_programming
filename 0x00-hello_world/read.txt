@@ -1,10 +1,27 @@
+Terminal: man gcc
+Google: gcc manpage
+=====================
+
 0. Preprocessor
-To run a C file through the Preprocessor stage alone and save it's result into another file:
-Use this option: -E : stop after the preprocessing stage..do not compile
+- To run a C file through the Preprocessor stage alone and save it's result into another file:
+;; Option: -E
+;; Usage: Stops after the preprocessing stage. Does not compile.
 
 gcc -E file.c -o newfile
-
 
 ----
 
 1. Compiler
+- To compile a C file but do not link it and have an extension of .o
+- Doing this will generate the object file (.o) by itself
+;; Option: -c
+;; Usage: compile or assemble the source file, but do not link. The output is in a form of an object file (.o)
+
+gcc -c file.c
+
+----
+
+2. Assembler
+- Generate the assembly code of a C code and save it in an output file
+;; Option: -S
+;; Usage: Stops after the compilation but does not assemble. The output file generated is in a form of an assembly code (.s)
