@@ -1,0 +1,10 @@
+0. Preprocessor
+To run a C file through the Preprocessor stage alone and save it's result into another file:
+Use this option: -E : stop after the preprocessing stage..do not compile
+
+gcc -E file.c -o newfile
+
+
+----
+
+1. Compiler
