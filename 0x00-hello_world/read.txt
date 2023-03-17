@@ -88,3 +88,15 @@ printf("Hello %c\n", name);
 
 Example:
 printf("Size of a char: %d\n", sizeof(char));
+
+
+----
+7. Intel
+
+- Generate the assembly code (Intel syntax) of a C code and save in an output file
+;; Option 1: -S
+;;; Usage: Stops after the compilation but does not assemble. The output file generated is in a form of an assembly code ".s"
+;; Option 2: -masm=dialect
+;;; Usage: Microsoft Macro Assembler (MASM) | generates in a given syntaxt (dialect)
+
+gcc -S -masm=Intel file.c
