@@ -11,18 +11,18 @@ Google: gcc manpage
 
 gcc -E file.c -o newfile
 
-----
 
+----
 1. Compiler
 - Compile a C file but do not link it and have an extension of ".o"
-- Doing this will generate the object file ".o" by itself
+-: Doing this will generate the object file ".o" by itself
 ;; Option: -c
 ;; Usage: compile or assemble the source file, but do not link. The output is in a form of an object file ".o"
 
 gcc -c file.c
 
-----
 
+----
 2. Assembler
 - Generate the assembly code of a C code and save it in an output file with extension ".s"
 ;; Option: -S
@@ -30,8 +30,8 @@ gcc -c file.c
 
 gcc -S file.c
 
-----
 
+----
 3. Name
 - Compile a C file and create an executable
 ;; Option: -o
@@ -39,11 +39,13 @@ gcc -S file.c
 
 gcc file.c -o newfile
 
----
 
+---
 4. Hello, puts
-- A C program that prints a string to the standard output but using the function "puts"
-puts() only takes one argument which should be a character (char) and should also be allocated a memory space since char is usually 1.
+- A C program that prints a given string using the function "puts()"
+;; Function: puts()
+;; Usage: it only takes one argument which should be a character (char) and should also be allocated a memory space since char is usually 1.
+
 Example:
 char s;
 s = 'H';
@@ -54,3 +56,18 @@ char ss[];
 ss = "Many strings";
 
 puts(ss);
+
+
+----
+5. Hello, printf
+- A C program that prints a given string using the function "printf()"
+;; Function: printf()
+;; Usage: it can takes one argument which will be formatted and an arbitary number of arguments.
+
+Example:
+printf("Hello!\n");
+
+Or
+
+char name[4];
+printf("Hello %c\n", name);
