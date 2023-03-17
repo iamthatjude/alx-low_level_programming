@@ -99,4 +99,14 @@ printf("Size of a char: %d\n", sizeof(char));
 ;; Option 2: -masm=dialect
 ;;; Usage: Microsoft Macro Assembler (MASM) | generates in a given syntaxt (dialect)
 
-gcc -S -masm=Intel file.c
+gcc -S -masm=intel file.c
+
+
+----
+8. UNIX is basically a simple operating system, but you have to be a genius to understand the simplicity
+
+- A C program that prints a given string to the standard error
+;; Option: fprintf()
+;; Usage: it can prints to the text streams which can be stdin, stdout and stderr. In this case, printing to stderr.
+
+fprintf(stderr, "text here\n");
