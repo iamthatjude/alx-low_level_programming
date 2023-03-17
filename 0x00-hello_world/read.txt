@@ -3,25 +3,54 @@ Google: gcc manpage
 =====================
 
 0. Preprocessor
-- To run a C file through the Preprocessor stage alone and save it's result into another file:
-;; Option: -E
-;; Usage: Stops after the preprocessing stage. Does not compile.
+- Run a C file through the Preprocessor stage alone and save it's result into another file:
+;; Option 1: -E
+;;; Usage: Stops after the preprocessing stage. Does not compile.
+;; Option 2: -o
+;;; Usage: Places the output in a file named right after the option/flag
 
 gcc -E file.c -o newfile
 
 ----
 
 1. Compiler
-- To compile a C file but do not link it and have an extension of .o
-- Doing this will generate the object file (.o) by itself
+- Compile a C file but do not link it and have an extension of ".o"
+- Doing this will generate the object file ".o" by itself
 ;; Option: -c
-;; Usage: compile or assemble the source file, but do not link. The output is in a form of an object file (.o)
+;; Usage: compile or assemble the source file, but do not link. The output is in a form of an object file ".o"
 
 gcc -c file.c
 
 ----
 
 2. Assembler
-- Generate the assembly code of a C code and save it in an output file
+- Generate the assembly code of a C code and save it in an output file with extension ".s"
 ;; Option: -S
-;; Usage: Stops after the compilation but does not assemble. The output file generated is in a form of an assembly code (.s)
+;; Usage: Stops after the compilation but does not assemble. The output file generated is in a form of an assembly code ".s"
+
+gcc -S file.c
+
+----
+
+3. Name
+- Compile a C file and create an executable
+;; Option: -o
+;; Usage: Places the output in a file named right after the option/flag
+
+gcc file.c -o newfile
+
+---
+
+4. Hello, puts
+- A C program that prints a string to the standard output but using the function "puts"
+puts() only takes one argument which should be a character (char) and should also be allocated a memory space since char is usually 1.
+Example:
+char s;
+s = 'H';
+
+..but
+
+char ss[];
+ss = "Many strings";
+
+puts(ss);
