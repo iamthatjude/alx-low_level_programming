@@ -9,7 +9,7 @@ int main(void)
 {
 	char lowercase = 'a', UPPERCASE = 'A';
 
-	while (a <= 'z')
+	while (lowercase <= 'z')
 	{
 		putchar(lowercase);
 		lowercase++;
