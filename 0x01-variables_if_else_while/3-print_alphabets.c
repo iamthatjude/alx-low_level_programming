@@ -20,5 +20,6 @@ int main(void)
 		putchar(UPPERCASE);
 		UPPERCASE++;
 	}
+	putchar('\n');
 	return (0);
 }
