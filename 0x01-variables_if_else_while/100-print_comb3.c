@@ -22,11 +22,10 @@ int main(void)
 
 		while (a <= 57)
 		{
-			if (b != a && b < b)
+			if (b != a && b < a)
 			{
 				putchar(b);
 				putchar(a);
-
 				if (a == 57 && b == 56)
 				{
 					break;
