@@ -3,11 +3,17 @@
 /**
 * main - Print alphabet in lowercase but exclude 'q' and 'e'
 *
+* Values & Characters
+* 97 = 'a'
+* 123 = 'z'
+* 101 = 'e'
+* 113 = 'q'
+*
 * Return: Always 0 (Success)
 */
 int main(void)
 {
-	int no = 97; /* 97 = 'a' | 123 = 'z' | 101 = 'e' | 113 = 'q' */
+	int no = 97;
 
 	while (no <= 123)
 	{
