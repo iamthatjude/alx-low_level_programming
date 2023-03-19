@@ -3,7 +3,7 @@
 /**
 * main - Print alphabet in lowercase but exclude 'q' and 'e'
 *
-* Values & Characters
+* Values & Characters used
 * 97 = 'a'
 * 123 = 'z'
 * 101 = 'e'
