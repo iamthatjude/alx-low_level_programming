@@ -1,112 +1,134 @@
-Terminal: man gcc
-Google: gcc manpage
+Terminal:
+$ man gcc
+$ man ascii
+
+Google:
+gcc manpage
+ascii manpage
 =====================
 
-0. Preprocessor
+0. Positive anything is better than negative nothing
 
-- Run a C file through the Preprocessor stage alone and save it's result into another file:
-;; Option 1: -E
-;;; Usage: Stops after the preprocessing stage. Does not compile.
-;; Option 2: -o
-;;; Usage: Places the output in a file named right after the option/flag
-
-gcc -E file.c -o newfile
+- A program that assigns a random number to a given variable any time it is executed. The program should say if the given variable is positive or negative or zero.
+;; Option: if .. else if .. else if
 
 
 ----
-1. Compiler
+1. The last digit
 
-- Compile a C file but do not link it and have an extension of ".o"
--: Doing this will generate the object file ".o" by itself
-;; Option: -c
-;; Usage: compile or assemble the source file, but do not link. The output is in a form of an object file ".o"
-
-gcc -c file.c
+- A program that assigns a random number to a given variable each time it is executed. The program should print the last digit of the number stored in the variable.
+;; Option 1: if ..  else if .. else if
+;; Option 2: % (modulo operator)
+;;; Usage: using modulo on the random number by 10. Ex: 1234 % 10 will give you the last number '4'
 
 
 ----
-2. Assembler
+2. I sometimes suffer from insomnia. And when I can't fall asleep, I play what I call the alphabet game
 
-- Generate the assembly code of a C code and save it in an output file with extension ".s"
-;; Option: -S
-;; Usage: Stops after the compilation but does not assemble. The output file generated is in a form of an assembly code ".s"
-
-gcc -S file.c
+- A program that prints the alphabet in lowercase, followed by a new line.
+- Use the "putchar()" function for printing and new line.
+;; Option 1: while (){..}
+;; Option 2: putchar() and putchar('\n')
 
 
 ----
-3. Name
+3. alphABET
 
-- Compile a C file and create an executable
-;; Option: -o
-;; Usage: Places the output in a file named right after the option/flag
-
-gcc file.c -o newfile
+- A program that prints the alphabet in lowercase, and then in uppercase, followed by a new line.
+- Use the "putchar()" function for printing and new line.
+;; Option 1: while(){..} while(){..}
+;; Option 2: putchar() and putchar('\n')
 
 
 ---
-4. Hello, puts
+4. When I was having that alphabet soup, I never thought that it would pay off
 
-- A C program that prints a given string using the function "puts()"
-;; Function: puts()
-;; Usage: it only takes one argument which should be a character (char) and should also be allocated a memory space since char is usually 1.
-
-Example:
-char s;
-s = 'H';
-
-..but
-
-char ss[];
-ss = "Many strings";
-
-puts(ss);
+- A program that prints the alphabet in lowercase, followed by a new line.
+- Use the "putchar()" function for printing and new line.
+-: there are two ways to write this program which is also in the folder on github
+;; Option 1: while(){..}
+;; Option 2: if(){..}
+;; Option 3: putchar() 's
 
 
 ----
-5. Hello, printf
+5. Numbers
 
-- A C program that prints a given string using the function "printf()"
-;; Function: printf()
-;; Usage: it can takes one argument which will be formatted and an arbitary number of arguments.
-
-Example:
-printf("Hello!\n");
-
-Or
-
-char name[4];
-printf("Hello %c\n", name);
+- A program that prints all single digit numbers of base 10 starting from 0, followed by a new line.
+-: simply put, it prints 0 to 9
+;; Option 1: while(){..}
+;; Option 2: putchar('\n')
 
 
 ----
-6. Size is not grandeur, and territory does not make a nation
+6. Numberz
 
-- A C program that prints the size of various types based on the machine compiled and run on.
-;; Function: sizeof()
-;; Usage: displays the size of a given type.
-
-Example:
-printf("Size of a char: %d\n", sizeof(char));
-
-
-----
-7. Intel
-
-- Generate the assembly code (Intel syntax) of a C code and save in an output file
-;; Option 1: -S
-;;; Usage: Stops after the compilation but does not assemble. The output file generated is in a form of an assembly code ".s"
-;; Option 2: -masm=dialect
-;;; Usage: Microsoft Macro Assembler (MASM) | generates in a given syntaxt (dialect)
-
-gcc -S -masm=intel file.c
+- A program that prints all single digit numbers of base 10 starting from 0, followed by a new line.
+-:: Not allowed to use any variable of type 'char'
+-:: Can only use 'putchar()' function
+;; Option 1: while(){..}
+;; Option 2: putchar()
 
 
 ----
-8. UNIX is basically a simple operating system, but you have to be a genius to understand the simplicity
+7. Smile in the mirror
 
-- A C program that prints a given string to the standard error
-;; Option: fprintf()
-;; Usage: it can prints to the text streams which can be stdin, stdout and stderr. In this case, printing to stderr.
+- A program that prints the lowercase alphabet in reverse, followed by a new line.
+;; Option 1: while(){..}
+;; Option 2: putchar()
 
-fprintf(stderr, "text here\n");
+
+----
+8. Hexadecimal
+
+- A program that prints all the numbers of base 16 in lowercase, followed by a new line.
+-: there are two ways to write this program which is also in the folder on github
+;; Option 1: putchar()
+;; Option 2: while(){..}
+;; Option 3: if ()
+
+
+----
+9. Patience, persistence and perspiration make an unbeatable combination for success
+
+- A program that prints all possible combinations of single-digit numbers.
+-:: numbers must be separated by ',' followed by a space
+-:: to be printed in ascending order
+-:: not allowed to use any variable of type 'char'
+-: there are two ways to write this program which is also in the folder on github
+;; Option 1: putchar()
+;; Option 2: while(){..}
+;; Option 3: if .. else
+
+
+----
+10. Inventing is a combination of brains and materials. The more brains you use, the less material you need
+
+- A program that prints all possible different combinations of two digits.
+-:: numbers must be separated by ',' followed by a space
+-:: to be printed in ascending order
+-:: not allowed to use any variable of type 'char'
+;; Option 1: putchar()
+;; Option 2: while(){..} while(){..}
+
+
+----
+11. The success combination in business is: Do what you do better... and: do more of what you do...
+
+- A program that prints all possible different combinations of three digits.
+-:: numbers must be separated by ',' followed by a space
+-:: to be printed in ascending order
+-:: not allowed to use any variable of type 'char'
+;; Option 1: putchar()
+;; Option 2: while(){..} while(){..} while(){..}
+
+
+----
+12. Software is eating the World
+
+- A program that prints all possible combinations of two two-digit numbers.
+-:: numbers must be separated by ',' followed by a space
+-:: to be printed in ascending order
+-:: not allowed to use any variable of type 'char'
+;; Option 1: putchar()
+;; Option 2: while(){..} while(){..} while(){..} while(){..}
