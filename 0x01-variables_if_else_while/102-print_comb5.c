@@ -27,13 +27,13 @@ int main(void)
 					{
 						putchar(h);
 						putchar(g);
-						putchar(' ');
+						putchar(32);
 						putchar(e);
 						putchar(i);
-						if ((h == 57 && g == 56) && (e == 57 && i == 57))
+						if (h == 57 && g == 56 && e == 57 && i == 57)
 							break;
-						putchar(',');
-						putchar(' ');
+						putchar(44);
+						putchar(32);
 					}
 					i++;
 				}
