@@ -6,3 +6,15 @@ write manpage
 0. _putchar
 
 - A program that prints "_putchar" to the standard output, followed by a new line.
+-: create a C program with the .c extension that has the main() function and does the real printing.
+-: include the header file main.h
+-: in main.h , declare the _putchar function and save
+-: create a C file _putchar.c , include the header file main.h and declare the _putchar() function that returns a value
+
+
+----
+1. I sometimes suffer from insomnia. And when I can't fall asleep, I play what I call the alphabet game
+
+- A program that prints the alphabet in lowercase, followed by a new line.
+- Prototype: void print_alphabet(void);
+- You can only use _putchar twice in your code
