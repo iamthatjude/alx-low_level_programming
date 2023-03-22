@@ -22,3 +22,20 @@ write manpage
 
 
 ----
+2. 10 x alphabet
+
+- A program that prints the alphabet, in lowercase 10 times, followed by a new line.
+-: declare the function in the main.h file first
+-: use two while loops (nested while loop) for this task
+
+
+----
+3. islower
+
+- A program that checks for lowercase character. It returns 1 if lowercase and 0 if something else
+-: declare the function _islower() in the main.h first
+-: write a good description
+-: define the function _islower in it's given filename
+
+
+----
