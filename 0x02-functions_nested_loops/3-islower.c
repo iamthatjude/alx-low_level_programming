@@ -10,7 +10,7 @@
 */
 int _islower(int c)
 {
-	char start = 'a';
+	int start = 'a';
 
 	while (start <= 'z')
 	{
