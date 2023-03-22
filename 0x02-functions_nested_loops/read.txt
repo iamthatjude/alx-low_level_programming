@@ -1,0 +1,8 @@
+Google:
+gcc manpage
+write manpage
+=====================
+
+0. _putchar
+
+- A program that prints "_putchar" to the standard output, followed by a new line.
