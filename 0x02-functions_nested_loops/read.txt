@@ -39,3 +39,12 @@ write manpage
 
 
 ----
+4. isalpha
+
+- A program that checks for lowercase or uppercase character. It returns 1 if lowercase or uppercase and 0 if something else
+-: declare the function _isalpha() in the main.h first
+-: write a good description
+-: define the function _isalpha in it's given filename
+
+
+----
