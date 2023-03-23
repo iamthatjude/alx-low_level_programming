@@ -10,9 +10,9 @@
 */
 int _islower(int c)
 {
-	int start = 'a';
+	int start = 97;
 
-	while (start <= 'z')
+	while (start <= 122)
 	{
 		if (start == c)
 			return (1);
@@ -20,4 +20,5 @@ int _islower(int c)
 			return (0);
 		start++;
 	}
+	_putchar('\n');
 }
