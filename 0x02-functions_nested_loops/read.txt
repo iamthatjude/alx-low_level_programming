@@ -57,3 +57,10 @@ write manpage
 - Returns -1 and prints - if n is less than zero
 -: declare the function in the header file first (main.h)
 -: write description and define the function in it's given file
+
+
+----
+6. There is no such thing as absolute value in this world. You can only estimate what a thing is worth to you
+
+- Prototype: int _abs(int);
+- man abs
