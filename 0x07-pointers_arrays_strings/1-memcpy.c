@@ -7,7 +7,7 @@
  * @src: where content is copied from [source]
  * @n: number of bytes to copy
  *
- * Return: Always 0 | void
+ * Return: pointer goes to dest
 */
 char *_memcpy(char *dest, char *src, unsigned int n)
 {
