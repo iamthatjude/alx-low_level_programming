@@ -17,14 +17,10 @@ void print_diagsums(int *a, int size)
 	while (i < (size * size))
 	{
 		if (i % (size + 1) == 0)
-		{
 			sum1 += a[i];
-		}
 
 		if (i % (size - 1) == 0 && i != 0 && i < size * size - 1)
-		{
 			sum2 += a[i];
-		}
 
 		i++;
 	}
