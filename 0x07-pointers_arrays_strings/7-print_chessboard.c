@@ -9,7 +9,7 @@
 */
 void print_chessboard(char (*a)[8])
 {
-    unsigned int i, j = 0;
+	unsigned int i, j = 0;
 
 	while (i < 64)
 	{
