@@ -2,7 +2,8 @@
 
 /**
  * main - Prints the number of arguments passed into it
- * followed by a new line
+ * followed by a new line. Exclude the program name by
+ * using "-1"
  *
  * @argc: argument count
  * @argv: argument array based on the count; contains
