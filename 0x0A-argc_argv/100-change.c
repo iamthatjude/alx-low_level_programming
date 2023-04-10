@@ -35,15 +35,15 @@ int main(int argc, char *argv[])
 	while (cents > 0)
 	{
 		if (cents >= 25)
-			cents -= cents;
+			cents -= 25;
 		else if (cents >= 10)
-			cents -= cents;
+			cents -= 10;
 		else if (cents >= 5)
-			cents -= cents;
+			cents -= 5;
 		else if (cents >= 2)
-			cents -= cents;
+			cents -= 2;
 		else if (cents >= 1)
-			cents -= cents;
+			cents -= 1;
 
 		no_of_coins += 1;
 	}
