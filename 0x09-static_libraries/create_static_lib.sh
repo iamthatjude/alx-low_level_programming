@@ -3,4 +3,4 @@
 gcc -Wall -pedantic -Werror -Wextra -std=gnu89 -c *.c
 
 #2. Archive or Create the Static Library file
-ar rcs liball.a *.o
+ar -rc liball.a *.o
