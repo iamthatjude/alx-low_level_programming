@@ -1,3 +1,6 @@
 #!/bin/bash
-gcc -Wall -pedantic -Werror -Wextra -c *.c
-ar -rc liball.a *.o
+#1. Use GCC to Compile the Object Code first
+gcc -c *.c
+
+#2. Archive or Create the Static Library file
+ar rcs liball.a *.o
