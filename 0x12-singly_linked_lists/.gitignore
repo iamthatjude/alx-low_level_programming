@@ -1,1 +1,5 @@
+# Ignore opened files
 *.swp
+
+# Ignore hello.asm file
+*hello.asm
