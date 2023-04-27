@@ -9,7 +9,7 @@
  */
 size_t print_list(const list_t *h)
 {
-	size_t nelem;
+	size_t elements;
 
 	elements = 0;
 
