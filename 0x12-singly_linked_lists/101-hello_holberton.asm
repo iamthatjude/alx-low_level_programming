@@ -16,4 +16,5 @@ main:
 
 section .data
 		msg db "Hello, Holberton", 0xa		;new line = 0xa or 10
-		len equ $ -msg
+		;len equ $ -msg
+		fmt db "%s", 10, 0
