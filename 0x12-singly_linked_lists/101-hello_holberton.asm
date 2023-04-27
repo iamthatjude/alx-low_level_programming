@@ -1,20 +1,16 @@
 section .text
-		global main
-		extern printf
+		extern printf					;C function to be called
+		global main						;entry point
 
 main:
-		mov edx, len
 		mov ecx, msg
-		;mov ebx, 1
-		;mov eax, 4		;system call (sys_write)
-		;int 0x80		;call kernel
-		call printf
-		ret
+		mov edx, fmt
+		mov eax, 0
+		call printf						;call C function => printf()
 
-		;mov eax, 1		;system call (sys_exit)
-		;int 0x080
+		mov eax, 0						;return value => 0
+		ret								;return
 
 section .data
-		msg: db "Hello, Holberton", 0xa		;new line = 0xa or 10
-		;len equ $ -msg
-		fmt: db "%s", 10, 0
+		msg: db "Hello, Holberton", 0	;terminate string with 0 in C
+		fmt: db "%s", 10, 0				;printf format => '\n' or '0'
