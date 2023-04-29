@@ -3,3 +3,6 @@
 
 # Ignore main.c file
 *main.c
+
+# Ignore other main.c files
+*-main.c
