@@ -1,0 +1,5 @@
+# Ignore opened files
+*.swp
+
+# Ignore main.c file
+*main.c
